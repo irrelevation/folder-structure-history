@@ -35,6 +35,7 @@ main() {
     COUNTER=$(git log --pretty="format:%H" | wc -l)
     git log --pretty="format:%H" | awk 1 | while read COMMIT_HASH
     do
+        echo "$COUNTER commits left"
         git ls-tree -r $COMMIT_HASH --name-only | tree --fromfile . > "$FOLDERNAME/$COUNTER-$COMMIT_HASH.txt"
         let COUNTER=COUNTER-1
     done
