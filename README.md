@@ -4,7 +4,7 @@ Visualise how your folder structure changed over time
 
 ## MVP
 
-Creates a folder named 'folder-structure-history'.
+Creates a folder named `folder-structure-history`.
 Spits out a file per commit with a visualisation in text form.
 
 ## Steps
